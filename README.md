@@ -1,4 +1,4 @@
-# YZM212-Projects
+# YZM212-Project
 
 Naive Bayes ile Sınıflandırma
 
