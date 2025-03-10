@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # GitHub'daki dosya URL'si
-github_url = "https://raw.githubusercontent.com/kullaniciadi/repoadi/main/video_game_sales.xlsx"
+github_url = "https://github.com/Karaknight01/YZM212-Projects/blob/main/video_game_sales.xlsx"
 
 # Veriyi oku
 df = pd.read_excel(file_path)
