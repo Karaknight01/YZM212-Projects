@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-# Dosyanın yolu (Eğer localde çalışıyorsan)
-file_path = "filtered_video_game_sales_corrected.xlsx"
+# GitHub'daki dosya URL'si
+github_url = "https://raw.githubusercontent.com/kullaniciadi/repoadi/main/video_game_sales.xlsx"
 
 # Veriyi oku
 df = pd.read_excel(file_path)
@@ -21,6 +21,10 @@ y = df["Sales_Class"]
 # Veriyi %80 eğitim, %20 test olarak böl
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-# Veri setlerinin boyutlarını göster
-print("Eğitim verisi boyutu:", X_train.shape)
-print("Test verisi boyutu:", X_test.shape)
+# Veri setlerini CSV olarak kaydet
+X_train.to_csv("X_train.csv", index=False)
+X_test.to_csv("X_test.csv", index=False)
+y_train.to_csv("y_train.csv", index=False)
+y_test.to_csv("y_test.csv", index=False)
+
+print("Eğitim ve test verileri başarıyla kaydedildi!")
