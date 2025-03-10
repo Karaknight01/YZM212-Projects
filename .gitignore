@@ -1,0 +1,17 @@
+# IDE ve sanal ortam dosyaları
+.idea/
+.venv/
+
+# Python derleme ve cache dosyaları
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoint'leri (gerekirse)
+.ipynb_checkpoints/
+
+# Veri dosyaları ve büyük dosyalar (gerekirse)
+*.csv
+*.xlsx
+*.npy
